@@ -1,12 +1,20 @@
 <html>
   <head></head>
   <body>
-    <table>
-        
-        <tr>
+    <center>
+        <% if true_val.nil? || false_val.nil? || size_val.nil? || size.to_i < 2
+          status 200
+          erb :error
+        end %>
+        <h1>
+          Truth Table
+        </h1>
+        <table>
+          <tr>
             <th> </th>
-        </tr>
-    </table>
-    <a href="/">Back to Homepage</a>
+          </tr>
+        </table>
+      <a href="/">Back to Homepage</a>
+    </center>
   </body>
 </html>
