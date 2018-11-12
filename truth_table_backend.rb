@@ -4,14 +4,27 @@ require 'sinatra/reloader'
 
 # Return true if data is valid else false
 def check_data(true_val, false_val, size_val)
-  if true_val.nil? || false_val.nil? || size_val.nil? || size_val.to_i < 2
-    return true
-  elsif true_val.length > 1 || false_val.length > 1
-    return true
-  elsif true_val == false_val
-    return true
-  else
-    return false
+  # Check if size was set
+  if size_val.nil?
+      if size_val.to_i < 2
+        return true
+       end
+  end
+  # Check if true was set
+  if true_val.nil?
+    if true_val.length > 1
+      return true
+    end
+  end
+  if false_val.nil?
+    if false_val.length > 1
+      return true
+    end
+  end
+  if true_val.nil? && false_val.nil?
+      if true_val == false_val
+          return true
+      end
   end
 end
 
@@ -26,6 +39,16 @@ get '/submit' do
   if check_data true_val, false_val, size_val
       erb :error
   else
+    unless true_val.nil?
+      puts 'setting true'
+      true_val = 'T'
+    end
+    unless false_val.nil?
+      false_val = 'F'
+    end
+    unless size_val.nil?
+        size_val = '3'
+    end
     erb :truth_table, :locals => {true_val: true_val, false_val: false_val, size_val: size_val }
   end
 end
