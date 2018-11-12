@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>D3_Test_Suite</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_single_char</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td>tf</td>
+</tr>
+<tr><td>click</td><td>name=false_sym<datalist><option>name=false_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[3]</option><option>//input[@name='false_sym']</option><option>//input[2]</option><option>css=input[name="false_sym"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=false_sym<datalist><option>name=false_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[3]</option><option>//input[@name='false_sym']</option><option>//input[2]</option><option>css=input[name="false_sym"]</option></datalist></td><td>f</td>
+</tr>
+<tr><td>click</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td>4</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Submit']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Information:'])[1]/following::p[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Information:'])[1]/following::p[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ERROR'])[1]/following::p[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='The required parameters are as follows:'])[1]/preceding::p[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Back to Homepage'])[1]/preceding::p[2]</option><option>//p</option><option>css=p</option></datalist></td><td>Invalid Parameters!</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_size_equal_two</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td>t</td>
+</tr>
+<tr><td>type</td><td>name=false_sym<datalist><option>name=false_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[3]</option><option>//input[@name='false_sym']</option><option>//input[2]</option><option>css=input[name="false_sym"]</option></datalist></td><td>f</td>
+</tr>
+<tr><td>click</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td>2</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Submit']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='AND'])[1]/preceding::h1[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='AND'])[1]/preceding::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OR'])[1]/preceding::h1[1]</option><option>//h1</option><option>css=h1</option></datalist></td><td>Truth Table</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_size_less_than_two</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td>t</td>
+</tr>
+<tr><td>type</td><td>name=false_sym<datalist><option>name=false_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[3]</option><option>//input[@name='false_sym']</option><option>//input[2]</option><option>css=input[name="false_sym"]</option></datalist></td><td>f</td>
+</tr>
+<tr><td>type</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td>1</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Submit']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Information:'])[1]/following::p[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Information:'])[1]/following::p[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ERROR'])[1]/following::p[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='The required parameters are as follows:'])[1]/preceding::p[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Back to Homepage'])[1]/preceding::p[2]</option><option>//p</option><option>css=p</option></datalist></td><td>Invalid Parameters!</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_text_input</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>assertEditable</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td>True</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_true_symbol_label</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::form[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::form[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::form[1]</option><option>//form[@action='/submit']</option><option>//form</option><option>css=form</option></datalist></td><td>*True Symbol:*</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_false_symbol_label</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::form[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::form[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::form[1]</option><option>//form[@action='/submit']</option><option>//form</option><option>css=form</option></datalist></td><td>*False Symbol:*</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_submit_button_label</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>assertValue</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Show Truth Table']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td>Show Truth Table</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_home_page_link</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Reload Page<datalist><option>link=Reload Page</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::a[1]</option><option>//a[contains(text(),'Reload Page')]</option><option>//a[contains(@href, '/')]</option><option>//a</option><option>css=a</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::h1[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::h1[1]</option><option>//h1</option><option>css=h1</option></datalist></td><td>Welcome to Truth Table Generator</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_error_home_page_link</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=false_sym<datalist><option>name=false_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[3]</option><option>//input[@name='false_sym']</option><option>//input[2]</option><option>css=input[name="false_sym"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td>-1</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Show Truth Table']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Back to Homepage<datalist><option>link=Back to Homepage</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='The required parameters are as follows:'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Information:'])[1]/following::a[1]</option><option>//a[contains(text(),'Back to Homepage')]</option><option>//a[contains(@href, '/')]</option><option>//a</option><option>css=a</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::h1[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::h1[1]</option><option>//h1</option><option>css=h1</option></datalist></td><td>Welcome to Truth Table Generator</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_same_symbols</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td>t</td>
+</tr>
+<tr><td>type</td><td>name=false_sym<datalist><option>name=false_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[3]</option><option>//input[@name='false_sym']</option><option>//input[2]</option><option>css=input[name="false_sym"]</option></datalist></td><td>t</td>
+</tr>
+<tr><td>type</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td>4</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Show Truth Table']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Information:'])[1]/following::p[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Information:'])[1]/following::p[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ERROR'])[1]/following::p[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='The required parameters are as follows:'])[1]/preceding::p[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Back to Homepage'])[1]/preceding::p[2]</option><option>//p</option><option>css=p</option></datalist></td><td>Invalid Parameters!</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_large_table</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td>t</td>
+</tr>
+<tr><td>type</td><td>name=false_sym<datalist><option>name=false_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[3]</option><option>//input[@name='false_sym']</option><option>//input[2]</option><option>css=input[name="false_sym"]</option></datalist></td><td>f</td>
+</tr>
+<tr><td>click</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td>6</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Show Truth Table']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Truth Table'])[1]/following::th[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Truth Table'])[1]/following::th[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='AND'])[1]/preceding::th[6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OR'])[1]/preceding::th[7]</option><option>//th</option><option>css=th</option></datalist></td><td>5</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_small_table</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td>t</td>
+</tr>
+<tr><td>type</td><td>name=false_sym<datalist><option>name=false_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[3]</option><option>//input[@name='false_sym']</option><option>//input[2]</option><option>css=input[name="false_sym"]</option></datalist></td><td>f</td>
+</tr>
+<tr><td>type</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td>2</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Show Truth Table']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Truth Table'])[1]/following::th[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Truth Table'])[1]/following::th[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='AND'])[1]/preceding::th[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OR'])[1]/preceding::th[3]</option><option>//th</option><option>css=th</option></datalist></td><td>1</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_AND_val</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td>1</td>
+</tr>
+<tr><td>type</td><td>name=false_sym<datalist><option>name=false_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[3]</option><option>//input[@name='false_sym']</option><option>//input[2]</option><option>css=input[name="false_sym"]</option></datalist></td><td>0</td>
+</tr>
+<tr><td>type</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td>3</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Show Truth Table']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='XOR'])[1]/following::td[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='XOR'])[1]/following::td[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OR'])[1]/following::td[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Back to Homepage'])[1]/preceding::td[45]</option><option>//td[4]</option></datalist></td><td>0</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_XOR_val</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td>1</td>
+</tr>
+<tr><td>type</td><td>name=false_sym<datalist><option>name=false_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[3]</option><option>//input[@name='false_sym']</option><option>//input[2]</option><option>css=input[name="false_sym"]</option></datalist></td><td>0</td>
+</tr>
+<tr><td>type</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td>3</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Show Truth Table']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='XOR'])[1]/following::td[6]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='XOR'])[1]/following::td[6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OR'])[1]/following::td[6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Back to Homepage'])[1]/preceding::td[43]</option><option>//td[6]</option></datalist></td><td>0</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_OR_val</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=true_sym<datalist><option>name=true_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[4]</option><option>//input[@name='true_sym']</option><option>//input</option><option>css=input[name="true_sym"]</option></datalist></td><td>1</td>
+</tr>
+<tr><td>type</td><td>name=false_sym<datalist><option>name=false_sym</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[3]</option><option>//input[@name='false_sym']</option><option>//input[2]</option><option>css=input[name="false_sym"]</option></datalist></td><td>0</td>
+</tr>
+<tr><td>type</td><td>name=size<datalist><option>name=size</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[2]</option><option>//input[@name='size']</option><option>//input[3]</option><option>css=input[name="size"]</option></datalist></td><td>3</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Show Truth Table']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='XOR'])[1]/following::td[5]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='XOR'])[1]/following::td[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OR'])[1]/following::td[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Back to Homepage'])[1]/preceding::td[44]</option><option>//td[5]</option></datalist></td><td>0</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_default_true</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Show Truth Table']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='F'])[8]/following::td[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='F'])[8]/following::td[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='F'])[7]/following::td[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='F'])[9]/preceding::td[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='T'])[2]/preceding::td[2]</option><option>//tr[3]/td[3]</option></datalist></td><td>T</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_default_false</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Show Truth Table']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='F'])[2]/following::td[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='F'])[2]/following::td[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='F'])[1]/following::td[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='F'])[4]/preceding::td[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='F'])[5]/preceding::td[2]</option><option>//td[3]</option></datalist></td><td>F</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_default_size</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Truth Table Generator'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reload Page'])[1]/preceding::input[1]</option><option>//input[@value='Show Truth Table']</option><option>//input[4]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Truth Table'])[1]/following::th[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Truth Table'])[1]/following::th[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='AND'])[1]/preceding::th[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OR'])[1]/preceding::th[4]</option><option>//th</option><option>css=th</option></datalist></td><td>2</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test_invalid_address</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4567/laboon<datalist><option>http://localhost:4567/</option><option>http://localhost:4567/laboon</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Back to Homepage'])[1]/preceding::h1[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Back to Homepage'])[1]/preceding::h1[1]</option><option>//h1</option><option>css=h1</option></datalist></td><td>ERROR INVALID ADDRESS</td>
+</tr>
+</tbody></table>
+</body>
+</html>
