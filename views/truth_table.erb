@@ -3,18 +3,20 @@
   <%
     n = size_val.to_i
     rowArr = Array.new
+    tableArr = Array.new
     i = 0
     puts 'running here'
-    while (i < n**2)
+    while (i < (n**2))
       rowArr << '%0*b' % [n, i]
-      puts '%0*b' % [n, i]
       i += 1
     end
     # Iterate through strings and replace 1's and 0's with
     # user input values
     for r in rowArr
-      r.gsub(/[1]/, true_val)
-      r.gsub(/[0]/, false_val)
+      str = r
+      str = str.gsub(/[1]/, true_val)
+      str = str.gsub(/[0]/, false_val)
+      tableArr << str
     end
   %>
   <body>
@@ -40,11 +42,14 @@
             <th> OR </th>
             <th> XOR </th>
           </tr>
-          <% for row in rowArr %>
+          <% for row in tableArr %>
           <tr>
-            <% for col in rowArr[row] %>
-            <td>  </td>
+            <% row.split("").each do |i| %>
+            <td> <%= i %> </td>
+              <% end %>
+            <td> <%=   %> </td>
           </tr>
+          <% end %>
         </table>
         <br>
       <a href="/">Back to Homepage</a>
