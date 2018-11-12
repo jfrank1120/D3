@@ -1,5 +1,24 @@
 <html>
   <head></head>
+  <%
+    n = size_val.to_i
+    rowArr = Array.new
+    i = 0
+    puts 'running here'
+    while (i < n**2)
+      rowArr << '%0*b' % [n, i]
+      puts '%0*b' % [n, i]
+      i += 1
+    end
+    # Iterate through strings and replace 1's and 0's with
+    # user input values
+    for r in rowArr
+      for c in rowArr[r]
+        c.gsub(/[1]/, true_val)
+        c.gsub(/[0]/, false_val)
+      end
+    end
+  %>
   <body>
     <center>
         <h1>
@@ -7,9 +26,29 @@
         </h1>
         <table>
           <tr>
-            <th> </th>
+            <%
+              i = size_val.to_i
+              loop do
+                if i == 0
+                  break
+                end
+              i -= 1
+            %>
+            <th> <%= i %> </th>
+            <%
+               end
+            %>
+            <th> AND </th>
+            <th> OR </th>
+            <th> XOR </th>
+          </tr>
+          <% for row in rowArr %>
+          <tr>
+            <% for col in rowArr[row] %>
+            <td>  </td>
           </tr>
         </table>
+        <br>
       <a href="/">Back to Homepage</a>
     </center>
   </body>
