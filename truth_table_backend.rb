@@ -26,6 +26,7 @@ def check_data(true_val, false_val, size_val)
           return true
       end
   end
+  return false
 end
 
 get '/' do
@@ -40,7 +41,6 @@ get '/submit' do
       erb :error
   else
     unless true_val.nil?
-      puts 'setting true'
       true_val = 'T'
     end
     unless false_val.nil?
