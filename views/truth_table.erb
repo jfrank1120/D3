@@ -46,8 +46,20 @@
           <tr>
             <% row.split("").each do |i| %>
             <td> <%= i %> </td>
-              <% end %>
-            <td> <%=   %> </td>
+            <% end
+               andVal = true_val
+               row.split("").each do |i|
+                 if i != true_val
+                   andVal = false_val
+                 end
+               end
+            %>
+            <td>
+              <%= andVal %>
+            </td>
+            <td>
+
+            </td>
           </tr>
           <% end %>
         </table>
