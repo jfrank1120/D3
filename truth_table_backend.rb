@@ -6,9 +6,7 @@ require 'sinatra/reloader'
 def check_data(true_val, false_val, size_val)
   # Check if size was set
   unless size_val == ''
-      puts 'here'
       if size_val.to_i < 2
-        puts 'less than two'
         return true
       end
   end
