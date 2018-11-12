@@ -48,17 +48,29 @@
             <td> <%= i %> </td>
             <% end
                andVal = true_val
+               orVal = false_val
+               xorVal = true_val
+               numTrueVals = 0
                row.split("").each do |i|
                  if i != true_val
                    andVal = false_val
+                 else
+                   numTrueVals += 1
+                   orVal = true_val
                  end
+               end
+               if numTrueVals % 2 == 0
+                 xorVal = false_val
                end
             %>
             <td>
               <%= andVal %>
             </td>
             <td>
-
+              <%= orVal %>
+            </td>
+            <td>
+              <%= xorVal %>
             </td>
           </tr>
           <% end %>
