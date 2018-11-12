@@ -13,10 +13,8 @@
     # Iterate through strings and replace 1's and 0's with
     # user input values
     for r in rowArr
-      for c in rowArr[r]
-        c.gsub(/[1]/, true_val)
-        c.gsub(/[0]/, false_val)
-      end
+      r.gsub(/[1]/, true_val)
+      r.gsub(/[0]/, false_val)
     end
   %>
   <body>
